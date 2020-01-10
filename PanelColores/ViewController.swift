@@ -9,12 +9,25 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    // IBOulets
+    @IBOutlet weak var vistaColor: UIView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        //
+        vistaColor.backgroundColor = .black
+        
     }
 
+    // IBActions
+        // cambio de boton
+    @IBAction func cambioBoton(_ sender: UISwitch) {
+        vistaColor.backgroundColor = UIColor.red
+    }
+    
+    
 
 }
 
