@@ -24,7 +24,7 @@
                                 </constraints>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="eMM-bx-1zP">
-                                <rect key="frame" x="163" y="395.66666666666669" width="51" height="31"/>
+                                <rect key="frame" x="16" y="395.66666666666669" width="51" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="7ft-f5-e1W"/>
                                 </constraints>
@@ -33,7 +33,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4AU-P6-tQK">
-                                <rect key="frame" x="164" y="476.66666666666669" width="49" height="31"/>
+                                <rect key="frame" x="17" y="476.66666666666669" width="49" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="amo-Q9-K0l"/>
                                     <constraint firstAttribute="height" constant="31" id="q4s-wR-nRF"/>
@@ -43,7 +43,7 @@
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-R4-kFG">
-                                <rect key="frame" x="164" y="557.66666666666663" width="49" height="31"/>
+                                <rect key="frame" x="17" y="557.66666666666663" width="49" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="47" id="2HB-7o-I1c"/>
                                     <constraint firstAttribute="height" constant="31" id="BNf-nf-eR6"/>
@@ -52,17 +52,47 @@
                                     <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="fkI-tZ-bzb"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="erC-ha-xvb">
+                                <rect key="frame" x="104" y="396" width="255" height="31"/>
+                                <connections>
+                                    <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="AtP-hk-ukv"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-xf-bOg">
+                                <rect key="frame" x="104" y="479" width="255" height="27"/>
+                                <connections>
+                                    <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="6rE-ma-CI0"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-Zl-cWP">
+                                <rect key="frame" x="104" y="557" width="255" height="33"/>
+                                <connections>
+                                    <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="y7Q-rD-35R"/>
+                                </connections>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Tii-R4-kFG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5bK-ZB-iRh"/>
+                            <constraint firstItem="Tpb-xf-bOg" firstAttribute="trailing" secondItem="ggp-Zl-cWP" secondAttribute="trailing" id="2h6-iS-jB0"/>
+                            <constraint firstItem="Tii-R4-kFG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-147" id="5bK-ZB-iRh"/>
+                            <constraint firstItem="erC-ha-xvb" firstAttribute="centerY" secondItem="eMM-bx-1zP" secondAttribute="centerY" id="8hx-1M-ZQy"/>
                             <constraint firstItem="EuI-EK-xwd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-239" id="HaC-WP-U3P"/>
                             <constraint firstItem="EuI-EK-xwd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LX4-oL-nWe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erC-ha-xvb" secondAttribute="trailing" constant="18" id="OGD-B8-ysT"/>
                             <constraint firstItem="4AU-P6-tQK" firstAttribute="top" secondItem="eMM-bx-1zP" secondAttribute="bottom" constant="50" id="Xdc-nz-nI4"/>
+                            <constraint firstItem="Tpb-xf-bOg" firstAttribute="leading" secondItem="ggp-Zl-cWP" secondAttribute="leading" id="bmw-Vv-hGK"/>
+                            <constraint firstItem="Tpb-xf-bOg" firstAttribute="leading" secondItem="4AU-P6-tQK" secondAttribute="trailing" constant="42" id="cv3-X7-km9"/>
+                            <constraint firstItem="Tpb-xf-bOg" firstAttribute="centerY" secondItem="4AU-P6-tQK" secondAttribute="centerY" id="dfX-lL-eR6"/>
                             <constraint firstItem="eMM-bx-1zP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fC3-oi-NVM"/>
-                            <constraint firstItem="4AU-P6-tQK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qDK-0Z-ezs"/>
+                            <constraint firstItem="erC-ha-xvb" firstAttribute="leading" secondItem="Tpb-xf-bOg" secondAttribute="leading" id="haN-zd-eAd"/>
+                            <constraint firstItem="erC-ha-xvb" firstAttribute="top" secondItem="EuI-EK-xwd" secondAttribute="bottom" constant="121" id="kAx-Mb-nOU"/>
+                            <constraint firstItem="erC-ha-xvb" firstAttribute="trailing" secondItem="Tpb-xf-bOg" secondAttribute="trailing" id="m1v-Ni-svY"/>
+                            <constraint firstItem="4AU-P6-tQK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-147" id="qDK-0Z-ezs"/>
                             <constraint firstItem="Tii-R4-kFG" firstAttribute="top" secondItem="4AU-P6-tQK" secondAttribute="bottom" constant="50" id="rl7-Y8-V8P"/>
-                            <constraint firstItem="eMM-bx-1zP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yI3-i8-woI"/>
+                            <constraint firstItem="Tpb-xf-bOg" firstAttribute="top" secondItem="erC-ha-xvb" secondAttribute="bottom" constant="53" id="w6F-VY-j4R"/>
+                            <constraint firstItem="ggp-Zl-cWP" firstAttribute="centerY" secondItem="Tii-R4-kFG" secondAttribute="centerY" id="why-mE-9Hq"/>
+                            <constraint firstItem="ggp-Zl-cWP" firstAttribute="top" secondItem="Tpb-xf-bOg" secondAttribute="bottom" constant="52" id="xDO-A7-dB1"/>
+                            <constraint firstItem="eMM-bx-1zP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-147" id="yI3-i8-woI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -70,6 +100,9 @@
                         <outlet property="botonAzul" destination="Tii-R4-kFG" id="Q0t-2D-Qrj"/>
                         <outlet property="botonRojo" destination="eMM-bx-1zP" id="Ild-fY-vni"/>
                         <outlet property="botonVerde" destination="4AU-P6-tQK" id="IbZ-eh-SDx"/>
+                        <outlet property="sliderAzul" destination="ggp-Zl-cWP" id="aD8-i5-aJV"/>
+                        <outlet property="sliderRojo" destination="erC-ha-xvb" id="ghN-Gv-gj6"/>
+                        <outlet property="sliderVerde" destination="Tpb-xf-bOg" id="kbM-hm-mko"/>
                         <outlet property="vistaColor" destination="EuI-EK-xwd" id="wmp-6a-STE"/>
                     </connections>
                 </viewController>

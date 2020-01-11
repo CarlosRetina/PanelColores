@@ -15,6 +15,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var botonRojo: UISwitch!
     @IBOutlet weak var botonVerde: UISwitch!
     @IBOutlet weak var botonAzul: UISwitch!
+    @IBOutlet weak var sliderRojo: UISlider!
+    @IBOutlet weak var sliderVerde: UISlider!
+    @IBOutlet weak var sliderAzul: UISlider!
+    
     
     
     override func viewDidLoad() {
@@ -28,6 +32,10 @@ class ViewController: UIViewController {
 
     @IBAction func botonCambioColor(_ sender: UISwitch) {
         actualizarColor()
+    }
+    
+    @IBAction func cambioSlider(_ sender: UISlider) {
+        
     }
     
     // Fuciones
@@ -47,5 +55,6 @@ class ViewController: UIViewController {
         let color = UIColor(red: rojo, green: verde, blue: azul, alpha: 1.0)
         vistaColor.backgroundColor = color
     }
+    
 }
 
