@@ -12,26 +12,40 @@ class ViewController: UIViewController {
     
     // IBOulets
     @IBOutlet weak var vistaColor: UIView!
+    @IBOutlet weak var botonRojo: UISwitch!
+    @IBOutlet weak var botonVerde: UISwitch!
+    @IBOutlet weak var botonAzul: UISwitch!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //
-        vistaColor.backgroundColor = .black
+        actualizarColor()
         
     }
 
     // IBActions
-        // cambio de boton
-    @IBAction func cambioBoton(_ sender: UISwitch) {
-        if sender.isOn {
-            vistaColor.backgroundColor = UIColor.red
-        } else {
-            vistaColor.backgroundColor = .black
-        }
+
+    @IBAction func botonCambioColor(_ sender: UISwitch) {
+        actualizarColor()
     }
     
-    
-
+    // Fuciones
+    func actualizarColor() {
+        var rojo:CGFloat = 0
+        var verde:CGFloat = 0
+        var azul:CGFloat = 0
+        if botonRojo.isOn{
+            rojo = 1
+        }
+        if botonVerde.isOn {
+            verde = 1
+        }
+        if botonAzul.isOn {
+            azul = 1
+        }
+        let color = UIColor(red: rojo, green: verde, blue: azul, alpha: 1.0)
+        vistaColor.backgroundColor = color
+    }
 }
 

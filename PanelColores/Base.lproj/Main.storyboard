@@ -29,20 +29,47 @@
                                     <constraint firstAttribute="height" constant="31" id="7ft-f5-e1W"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="cambioBoton:" destination="BYZ-38-t0r" eventType="valueChanged" id="Tn9-Vi-OgF"/>
+                                    <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="T0q-9s-2Y7"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4AU-P6-tQK">
+                                <rect key="frame" x="164" y="476.66666666666669" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="amo-Q9-K0l"/>
+                                    <constraint firstAttribute="height" constant="31" id="q4s-wR-nRF"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="QSX-Ff-2bt"/>
+                                </connections>
+                            </switch>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-R4-kFG">
+                                <rect key="frame" x="164" y="557.66666666666663" width="49" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="47" id="2HB-7o-I1c"/>
+                                    <constraint firstAttribute="height" constant="31" id="BNf-nf-eR6"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="fkI-tZ-bzb"/>
                                 </connections>
                             </switch>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="Tii-R4-kFG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5bK-ZB-iRh"/>
                             <constraint firstItem="EuI-EK-xwd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-239" id="HaC-WP-U3P"/>
                             <constraint firstItem="EuI-EK-xwd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LX4-oL-nWe"/>
+                            <constraint firstItem="4AU-P6-tQK" firstAttribute="top" secondItem="eMM-bx-1zP" secondAttribute="bottom" constant="50" id="Xdc-nz-nI4"/>
                             <constraint firstItem="eMM-bx-1zP" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="fC3-oi-NVM"/>
+                            <constraint firstItem="4AU-P6-tQK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="qDK-0Z-ezs"/>
+                            <constraint firstItem="Tii-R4-kFG" firstAttribute="top" secondItem="4AU-P6-tQK" secondAttribute="bottom" constant="50" id="rl7-Y8-V8P"/>
                             <constraint firstItem="eMM-bx-1zP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="yI3-i8-woI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="botonAzul" destination="Tii-R4-kFG" id="Q0t-2D-Qrj"/>
+                        <outlet property="botonRojo" destination="eMM-bx-1zP" id="Ild-fY-vni"/>
+                        <outlet property="botonVerde" destination="4AU-P6-tQK" id="IbZ-eh-SDx"/>
                         <outlet property="vistaColor" destination="EuI-EK-xwd" id="wmp-6a-STE"/>
                     </connections>
                 </viewController>
