@@ -24,7 +24,11 @@ class ViewController: UIViewController {
     // IBActions
         // cambio de boton
     @IBAction func cambioBoton(_ sender: UISwitch) {
-        vistaColor.backgroundColor = UIColor.red
+        if sender.isOn {
+            vistaColor.backgroundColor = UIColor.red
+        } else {
+            vistaColor.backgroundColor = .black
+        }
     }
     
     
