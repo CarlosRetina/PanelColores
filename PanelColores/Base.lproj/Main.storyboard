@@ -70,6 +70,13 @@
                                     <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="y7Q-rD-35R"/>
                                 </connections>
                             </slider>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EeY-nB-iFn">
+                                <rect key="frame" x="130" y="663" width="115" height="30"/>
+                                <state key="normal" title="Resetear colores"/>
+                                <connections>
+                                    <action selector="resetearColores:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KdZ-zC-2Zw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -80,6 +87,7 @@
                             <constraint firstItem="EuI-EK-xwd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LX4-oL-nWe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="erC-ha-xvb" secondAttribute="trailing" constant="18" id="OGD-B8-ysT"/>
                             <constraint firstItem="4AU-P6-tQK" firstAttribute="top" secondItem="eMM-bx-1zP" secondAttribute="bottom" constant="50" id="Xdc-nz-nI4"/>
+                            <constraint firstItem="EeY-nB-iFn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="b7F-1s-LnB"/>
                             <constraint firstItem="Tpb-xf-bOg" firstAttribute="leading" secondItem="ggp-Zl-cWP" secondAttribute="leading" id="bmw-Vv-hGK"/>
                             <constraint firstItem="Tpb-xf-bOg" firstAttribute="leading" secondItem="4AU-P6-tQK" secondAttribute="trailing" constant="42" id="cv3-X7-km9"/>
                             <constraint firstItem="Tpb-xf-bOg" firstAttribute="centerY" secondItem="4AU-P6-tQK" secondAttribute="centerY" id="dfX-lL-eR6"/>
@@ -92,6 +100,7 @@
                             <constraint firstItem="Tpb-xf-bOg" firstAttribute="top" secondItem="erC-ha-xvb" secondAttribute="bottom" constant="53" id="w6F-VY-j4R"/>
                             <constraint firstItem="ggp-Zl-cWP" firstAttribute="centerY" secondItem="Tii-R4-kFG" secondAttribute="centerY" id="why-mE-9Hq"/>
                             <constraint firstItem="ggp-Zl-cWP" firstAttribute="top" secondItem="Tpb-xf-bOg" secondAttribute="bottom" constant="52" id="xDO-A7-dB1"/>
+                            <constraint firstItem="EeY-nB-iFn" firstAttribute="top" secondItem="ggp-Zl-cWP" secondAttribute="bottom" constant="74" id="xQn-rp-1Hu"/>
                             <constraint firstItem="eMM-bx-1zP" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-147" id="yI3-i8-woI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

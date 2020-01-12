@@ -35,22 +35,30 @@ class ViewController: UIViewController {
     }
     
     @IBAction func cambioSlider(_ sender: UISlider) {
-        
+        actualizarColor()
     }
     
-    // Fuciones
+    @IBAction func resetearColores(_ sender: UIButton) {
+        sliderRojo.value = 1
+        sliderVerde.value = 1
+        sliderAzul.value = 1
+        
+        actualizarColor()
+    }
+    
+    // Funciones
     func actualizarColor() {
         var rojo:CGFloat = 0
         var verde:CGFloat = 0
         var azul:CGFloat = 0
         if botonRojo.isOn{
-            rojo = 1
+            rojo = CGFloat(sliderRojo.value)
         }
         if botonVerde.isOn {
-            verde = 1
+            verde = CGFloat(sliderVerde.value)
         }
         if botonAzul.isOn {
-            azul = 1
+            azul = CGFloat(sliderAzul.value)
         }
         let color = UIColor(red: rojo, green: verde, blue: azul, alpha: 1.0)
         vistaColor.backgroundColor = color
