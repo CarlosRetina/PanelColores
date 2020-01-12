@@ -28,6 +28,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="31" id="7ft-f5-e1W"/>
                                 </constraints>
+                                <color key="onTintColor" red="0.86873710159999995" green="0.0053675300440000004" blue="0.0061066974889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="T0q-9s-2Y7"/>
                                 </connections>
@@ -38,6 +39,7 @@
                                     <constraint firstAttribute="width" constant="47" id="amo-Q9-K0l"/>
                                     <constraint firstAttribute="height" constant="31" id="q4s-wR-nRF"/>
                                 </constraints>
+                                <color key="onTintColor" red="0.00044508647989999997" green="0.95425134899999997" blue="0.01583766378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="QSX-Ff-2bt"/>
                                 </connections>
@@ -48,24 +50,28 @@
                                     <constraint firstAttribute="width" constant="47" id="2HB-7o-I1c"/>
                                     <constraint firstAttribute="height" constant="31" id="BNf-nf-eR6"/>
                                 </constraints>
+                                <color key="onTintColor" red="0.0061299684460000003" green="0.011654897589999999" blue="0.89391833539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="botonCambioColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="fkI-tZ-bzb"/>
                                 </connections>
                             </switch>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="erC-ha-xvb">
                                 <rect key="frame" x="104" y="396" width="255" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.86873710159999995" green="0.0053675300440000004" blue="0.0061066974889999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="AtP-hk-ukv"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tpb-xf-bOg">
                                 <rect key="frame" x="104" y="479" width="255" height="27"/>
+                                <color key="minimumTrackTintColor" red="0.00044508647989999997" green="0.95425134899999997" blue="0.01583766378" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="6rE-ma-CI0"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ggp-Zl-cWP">
                                 <rect key="frame" x="104" y="557" width="255" height="33"/>
+                                <color key="minimumTrackTintColor" red="0.0061299684460000003" green="0.011654897589999999" blue="0.89391833539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <connections>
                                     <action selector="cambioSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="y7Q-rD-35R"/>
                                 </connections>
@@ -78,7 +84,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" red="0.86271584445887439" green="0.94324124496956196" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Tpb-xf-bOg" firstAttribute="trailing" secondItem="ggp-Zl-cWP" secondAttribute="trailing" id="2h6-iS-jB0"/>
                             <constraint firstItem="Tii-R4-kFG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-147" id="5bK-ZB-iRh"/>

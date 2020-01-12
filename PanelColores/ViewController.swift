@@ -23,6 +23,12 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Modificamos la UIView vistaColor
+        vistaColor.layer.borderWidth = 5
+        vistaColor.layer.cornerRadius = 20
+        vistaColor.layer.borderColor = UIColor.darkGray.cgColor
+        
+        
         //
         actualizarColor()
         comprobarSwicht()
