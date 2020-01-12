@@ -25,6 +25,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         //
         actualizarColor()
+        comprobarSwicht()
         
     }
 
@@ -32,6 +33,7 @@ class ViewController: UIViewController {
 
     @IBAction func botonCambioColor(_ sender: UISwitch) {
         actualizarColor()
+        comprobarSwicht()
     }
     
     @IBAction func cambioSlider(_ sender: UISlider) {
@@ -42,8 +44,11 @@ class ViewController: UIViewController {
         sliderRojo.value = 1
         sliderVerde.value = 1
         sliderAzul.value = 1
-        
+        botonRojo.isOn = false
+        botonVerde.isOn = false
+        botonAzul.isOn = false
         actualizarColor()
+        comprobarSwicht()
     }
     
     // Funciones
@@ -62,6 +67,13 @@ class ViewController: UIViewController {
         }
         let color = UIColor(red: rojo, green: verde, blue: azul, alpha: 1.0)
         vistaColor.backgroundColor = color
+    }
+    
+    // Comprobar Swicht
+    func comprobarSwicht() {
+        sliderRojo.isEnabled = botonRojo.isOn
+        sliderVerde.isEnabled = botonVerde.isOn
+        sliderAzul.isEnabled = botonAzul.isOn
     }
     
 }
